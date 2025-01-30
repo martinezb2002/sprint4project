@@ -8,6 +8,8 @@ df = pd.read_csv('vehicles_us.csv')
 df['price'] = df['price'].astype(float)
 df['days_listed'] = df['days_listed'].astype(float)
    
+print(df.dtypes)
+   
 
 # creating a Header
 st.header("Car Sales Dashboard")
