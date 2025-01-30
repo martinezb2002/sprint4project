@@ -7,6 +7,9 @@ df = pd.read_csv('vehicles_us.csv')
 
 df['price'] = df['price'].astype(float)
 df['days_listed'] = df['days_listed'].astype(float)
+df['price'] = df['price'].fillna(0).astype(int)
+df['days_listed'] = df['days_listed'].fillna(0).astype(int)
+   
    
 print(df.dtypes)
    
@@ -25,7 +28,8 @@ st.plotly_chart(fig)
 # creating a checkbox
    
 if st.checkbox("Show Raw Data"):
-    st.write(df)
+    st.dataframe(df)
+   
 
 
 
