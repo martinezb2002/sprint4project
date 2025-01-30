@@ -6,6 +6,8 @@ import plotly.express as px
 df = pd.read_csv('vehicles_us.csv')
 
 df['price'] = df['price'].astype(float)
+df['days_listed'] = df['days_listed'].astype(float)
+   
 
 # creating a Header
 st.header("Car Sales Dashboard")
