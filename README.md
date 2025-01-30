@@ -6,3 +6,7 @@ This project utilized the help of streamlit, pandas, numpy, matplotlib, and plot
 
 # Deploying
 The deployment was done through [render](https://render.com/) as a new web service. After connecting our repository, we added 'pip install streamlit & pip install -r requirements.txt' to the Build Command, and also put 'streamlit run app.py' as our Start Command. 
+
+# Important Links
+[GitHub Repository](https://github.com/martinezb2002/sprint4project)
+[My App](https://sprint4project-1-pfy3.onrender.com/) 
